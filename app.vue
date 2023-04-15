@@ -1,7 +1,8 @@
 <template>
   <main>
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtLoadingIndicator />
+      <NuxtPage keepalive />
     </NuxtLayout>
   </main>
 </template>
