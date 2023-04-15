@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "deploy": "nuxt generate && firebase deploy",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/tailwindcss": "^6.6.6",
+    "nuxt": "^3.4.1",
+    "vite-svg-loader": "^4.0.0"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.8",
+    "pinia": "^2.0.34",
+    "rss-to-json": "^2.1.1",
+    "stream": "^0.0.2",
+    "xml-js": "^1.6.11"
+  }
+}

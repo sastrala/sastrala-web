@@ -1,0 +1,11 @@
+node_modules
+*.log*
+.firebase
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+.DS_Store
+pnpm-lock.yaml
