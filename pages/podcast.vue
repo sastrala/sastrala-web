@@ -49,7 +49,7 @@
                 :class="{
                   'text-blue-600 border-blue-600 font-medium active': tab === 1,
                   'text-gray-500 border-transparent font-medium hover:text-gray-600 hover:border-gray-300':
-                    tab !== 1
+                    tab !== 1,
                 }"
                 @click="tab = 1"
               >
@@ -62,7 +62,7 @@
                 :class="{
                   'text-blue-600 border-blue-600 font-medium active': tab === 2,
                   'text-gray-500 border-transparent font-medium hover:text-gray-600 hover:border-gray-300':
-                    tab !== 2
+                    tab !== 2,
                 }"
                 @click="tab = 2"
               >
@@ -82,7 +82,7 @@
             :class="{
               'bg-blue-100 text-blue-800': podcast_selected.id === data.id,
               'hover:text-blue-600 focus:text-blue-600':
-                podcast_selected.id !== data.id
+                podcast_selected.id !== data.id,
             }"
             @click="onSelectPodcast(data)"
           >
@@ -153,10 +153,10 @@ const config = useRuntimeConfig();
 // define data
 const tab = ref(1);
 const feedPodcast = computed(() => {
-  return podcast_data?.value.feed;
+  return podcast_data?.value?.feed;
 });
 const listPodcast = computed(() => {
-  return podcast_data?.value.items;
+  return podcast_data?.value?.items;
 });
 
 onBeforeMount(() => {
@@ -188,41 +188,41 @@ useHead({
     {
       hid: "title",
       name: "title",
-      content: `Podcast - ${feedPodcast.value?.title} | Sastrala`
+      content: `Podcast - ${feedPodcast.value?.title} | Sastrala`,
     },
     {
       hid: "description",
       name: "description",
-      content: `Podcast dari kami yaitu ${feedPodcast.value?.title}`
+      content: `Podcast dari kami yaitu ${feedPodcast.value?.title}`,
     },
     { hid: "og:type", property: "og:type", content: "podcast" },
     {
       hid: "og:url",
       property: "og:url",
-      content: `${config.APP_URL}/podcast`
+      content: `${config.APP_URL}/podcast`,
     },
     {
       hid: "og:title",
       property: "og:title",
-      content: `Podcast - ${feedPodcast.value?.title} | Sastrala`
+      content: `Podcast - ${feedPodcast.value?.title} | Sastrala`,
     },
     {
       hid: "og:description",
       property: "og:description",
-      content: `${feedPodcast.value?.description}`
+      content: `${feedPodcast.value?.description}`,
     },
     {
       hid: "og:image",
       property: "og:image",
-      content: `${feedPodcast.value?.image}`
-    }
+      content: `${feedPodcast.value?.image}`,
+    },
   ],
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: `${config.APP_URL}/podcast`
-    }
-  ]
+      href: `${config.APP_URL}/podcast`,
+    },
+  ],
 });
 </script>

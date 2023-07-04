@@ -3,7 +3,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sastrala-web{
+.sastrala-web {
   height: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -16,13 +16,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', 'serif';
+  font-family: "Merriweather", "serif" !important;
 }
 
 a,
 p,
 span {
-  font-family: 'Nunito', 'sans-serif';
+  font-family: "Nunito", "sans-serif" !important;
 }
 
 h1::selection,

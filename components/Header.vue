@@ -29,4 +29,7 @@
   color: #2563eb;
   padding: 2px 10px;
 }
+:not(.router-link-exact-active) {
+  margin: 0px 10px;
+}
 </style>
