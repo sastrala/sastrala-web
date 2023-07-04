@@ -1,7 +1,10 @@
 <template>
   <footer class="my-5 text-center justify-center">
     <section class="text-sm mb-2">
-      <NuxtLink to="privacy-policy">Kebijakan Privasi</NuxtLink>
+      <a href="https://tulisan.sastrala.id/kebijakan-privasi-46f74a5226c8">
+        Kebijakan Privasi
+      </a>
+      <!-- <NuxtLink to=" -policy">Kebijakan Privasi</NuxtLink> -->
       •
       <a href="https://tulisan.sastrala.id/about">Tentang</a>
     </section>

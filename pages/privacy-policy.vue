@@ -1,7 +1,7 @@
 <template>
   <section class="container py-10 px-5">
     <ContentRenderer :value="data">
-      <h1 class="mb-5 text-2xl font-bold">{{ data.title }}</h1>
+      <h1 class="mb-5 text-2xl font-bold">{{ data?.title }}</h1>
       <ContentRendererMarkdown
         class="prose prose-headings:font-serif prose-a:no-underline prose-a:font-bold"
         :value="data"
