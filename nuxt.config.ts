@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 
   // https://nuxt.com/docs/api/configuration/nuxt-config#runtimeconfig
   runtimeConfig: {
-    APP_URL: "https://sastrala.id"
+    APP_URL: "https://sastrala.id",
   },
 
   // https://nuxt.com/docs/api/configuration/nuxt-config#app
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung"
+            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung",
         },
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -34,9 +34,9 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung"
+            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung",
         },
-        { property: "og:image", content: "/banner.jpg" },
+        { property: "og:image", content: "https://sastrala.id/banner.jpg" },
         { property: "og:locale", content: "id" },
 
         // twitter tag
@@ -46,19 +46,22 @@ export default defineNuxtConfig({
         {
           property: "twitter:description",
           content:
-            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung"
+            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung",
         },
-        { property: "twitter:image", content: "/banner.jpg" },
+        {
+          property: "twitter:image",
+          content: "https://sastrala.id/banner.jpg",
+        },
 
         // verification purpose
         {
           name: "p:domain_verify",
-          content: "6aa257c4335252e9211c845785517776"
+          content: "6aa257c4335252e9211c845785517776",
         },
         {
           name: "facebook-domain-verification",
-          content: "09uwc6m1eaisg3gj1kn2xejq85gq70"
-        }
+          content: "09uwc6m1eaisg3gj1kn2xejq85gq70",
+        },
       ],
 
       link: [
@@ -66,19 +69,16 @@ export default defineNuxtConfig({
         {
           hid: "canonical",
           rel: "canonical",
-          href:
-            process.env.NODE_ENV === "production"
-              ? "https://sastrala.id"
-              : "http://localhost:3000"
-        }
-      ]
-    }
+          href: "https://sastrala.id",
+        },
+      ],
+    },
   },
 
   // https://nuxt.com/docs/api/configuration/nuxt-config#css
   css: [
     // CSS file in the project
-    "@/assets/css/main.css"
+    "@/assets/css/main.css",
   ],
 
   // https://nuxt.com/docs/api/configuration/nuxt-config#modules
@@ -88,7 +88,9 @@ export default defineNuxtConfig({
     // https://google-fonts.nuxtjs.org/
     "@nuxtjs/google-fonts",
     // https://pinia.vuejs.org/ssr/nuxt.html
-    "@pinia/nuxt"
+    "@pinia/nuxt",
+    // https://content.nuxtjs.org/
+    "@nuxt/content",
   ],
 
   // google font config
@@ -96,17 +98,17 @@ export default defineNuxtConfig({
     families: {
       Nunito: {
         wght: [400, 700],
-        ital: [400, 700]
+        ital: [400, 700],
       },
       Merriweather: {
         wght: [400, 700],
-        ital: [400, 700]
-      }
-    }
+        ital: [400, 700],
+      },
+    },
   },
 
   // vite config
   vite: {
-    plugins: [svgLoader()]
-  }
+    plugins: [svgLoader()],
+  },
 });
