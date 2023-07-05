@@ -26,7 +26,7 @@
 }
 .router-link-exact-active {
   background-color: #dbeafe;
-  color: #2563eb;
+  color: #123dab;
   padding: 2px 10px;
 }
 :not(.router-link-exact-active) {

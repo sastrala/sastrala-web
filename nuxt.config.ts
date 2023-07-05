@@ -16,20 +16,29 @@ export default defineNuxtConfig({
     buildAssetsDir: "/_sastrala-web",
     // Global page headers: https://nuxt.com/docs/api/configuration/nuxt-config#head
     head: {
+      htmlAttrs: {
+        lang: "id",
+      },
       title: "Sastrala - Sastra Kawula",
       meta: [
         { name: "title", content: "Sastrala - Sastra Kawula" },
         {
           name: "description",
           content:
-            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung",
+            "Sastrala: Ekstrakurikuler Jurnalistik SMKN 13 Bandung. Sebuah Tempat Seru untuk Menemukan Inspirasi, Menggali Bakat, dan Mewujudkan Potensimu. Ayo Bergabung dengan Kami dan Temukan Dunia Kreasi yang Mengasyikkan!",
         },
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
 
+        // another meta tag
+        {
+          name: "keywords",
+          content:
+            "Sastrala, Ekstrakurikuler jurnalistik, SMKN 13 Bandung, Kreativitas siswa, Pengembangan keterampilan, Kreativitas remaja, Eksplorasi talenta, Reporter, Wartawan, jurnalis, podcast, sarcast",
+        },
+
         // open graph tag / facebook
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://sastrala.id/" },
         { property: "og:title", content: "Sastrala - Sastra Kawula" },
         {
           property: "og:description",
@@ -61,15 +70,6 @@ export default defineNuxtConfig({
         {
           name: "facebook-domain-verification",
           content: "09uwc6m1eaisg3gj1kn2xejq85gq70",
-        },
-      ],
-
-      link: [
-        { rel: "icon", href: "/favicon.ico" },
-        {
-          hid: "canonical",
-          rel: "canonical",
-          href: "https://sastrala.id",
         },
       ],
     },

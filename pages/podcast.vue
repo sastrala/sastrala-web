@@ -199,7 +199,7 @@ useHead({
     {
       hid: "og:url",
       property: "og:url",
-      content: `${config.APP_URL}/podcast`,
+      content: "https://sastrala.id/podcast",
     },
     {
       hid: "og:title",
@@ -221,7 +221,7 @@ useHead({
     {
       hid: "canonical",
       rel: "canonical",
-      href: `${config.APP_URL}/podcast`,
+      href: "https://sastrala.id/podcast",
     },
   ],
 });

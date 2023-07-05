@@ -35,16 +35,16 @@ useHead({
     {
       hid: "og:url",
       property: "og:url",
-      content: config.APP_URL
-    }
+      content: "https://sastrala.id",
+    },
   ],
   link: [
     {
       hid: "canonical",
       rel: "canonical",
-      href: config.APP_URL
-    }
+      href: "https://sastrala.id",
+    },
   ],
-  script: [{ src: "https://cdn.campsite.bio/js/iframe.js", async: true }]
+  script: [{ src: "https://cdn.campsite.bio/js/iframe.js", async: true }],
 });
 </script>

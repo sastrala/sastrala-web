@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Crawl-delay: 10
+
+Sitemap: https://sastrala.id
+Sitemap: https://www.sastrala.id
