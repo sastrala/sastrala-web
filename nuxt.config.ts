@@ -83,6 +83,8 @@ export default defineNuxtConfig({
 
   // https://nuxt.com/docs/api/configuration/nuxt-config#modules
   modules: [
+    // https://nuxt.com/modules/security
+    "nuxt-security",
     // https://tailwindcss.nuxtjs.org/
     "@nuxtjs/tailwindcss",
     // https://google-fonts.nuxtjs.org/
@@ -92,6 +94,16 @@ export default defineNuxtConfig({
     // https://content.nuxtjs.org/
     "@nuxt/content",
   ],
+
+  // nuxt-security configuration
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: "unsafe-none",
+      contentSecurityPolicy: {
+        "img-src": ["'self'", "https://*"],
+      },
+    },
+  },
 
   // google font config
   googleFonts: {
