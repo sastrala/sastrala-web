@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         {
           property: "og:description",
           content:
-            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung",
+            "Sastrala: Ekstrakurikuler Jurnalistik SMKN 13 Bandung. Sebuah Tempat Seru untuk Menemukan Inspirasi, Menggali Bakat, dan Mewujudkan Potensimu. Ayo Bergabung dengan Kami dan Temukan Dunia Kreasi yang Mengasyikkan!",
         },
         { property: "og:image", content: "https://sastrala.id/banner.jpg" },
         { property: "og:locale", content: "id" },
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
         {
           property: "twitter:description",
           content:
-            "Website Resmi Sastrala Ekstrakurikuler Jurnalistik di SMKN 13 Bandung",
+            "Sastrala: Ekstrakurikuler Jurnalistik SMKN 13 Bandung. Sebuah Tempat Seru untuk Menemukan Inspirasi, Menggali Bakat, dan Mewujudkan Potensimu. Ayo Bergabung dengan Kami dan Temukan Dunia Kreasi yang Mengasyikkan!",
         },
         {
           property: "twitter:image",
