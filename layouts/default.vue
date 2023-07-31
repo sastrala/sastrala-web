@@ -1,6 +1,6 @@
 <template>
   <div class="sastrala-web">
-    <Header />
+    <!-- <Header /> -->
     <slot />
     <Footer />
   </div>
