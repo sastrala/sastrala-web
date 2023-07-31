@@ -93,6 +93,8 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     // https://content.nuxtjs.org/
     "@nuxt/content",
+    // https://nuxt.com/modules/gtag
+    "nuxt-gtag"
   ],
 
   // nuxt-security configuration
@@ -103,6 +105,11 @@ export default defineNuxtConfig({
         "img-src": ["'self'", "https://*"],
       },
     },
+  },
+
+  // google analytics configuration
+  gtag: {
+    id: 'G-CQQZ1X5WCD'
   },
 
   // google font config
