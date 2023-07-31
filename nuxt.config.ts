@@ -1,6 +1,3 @@
-// vite svg
-import svgLoader from "vite-svg-loader";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // https://nuxt.com/docs/api/configuration/nuxt-config#ssr
@@ -89,10 +86,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     // https://google-fonts.nuxtjs.org/
     "@nuxtjs/google-fonts",
-    // https://pinia.vuejs.org/ssr/nuxt.html
-    "@pinia/nuxt",
-    // https://content.nuxtjs.org/
-    "@nuxt/content",
     // https://nuxt.com/modules/gtag
     "nuxt-gtag"
   ],
@@ -124,10 +117,5 @@ export default defineNuxtConfig({
         ital: [400, 700],
       },
     },
-  },
-
-  // vite config
-  vite: {
-    plugins: [svgLoader()],
   },
 });
