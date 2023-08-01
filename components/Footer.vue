@@ -1,12 +1,11 @@
 <template>
   <footer class="my-5 text-center justify-center">
     <section class="text-sm mb-2">
-      <a href="https://tulisan.sastrala.id/kebijakan-privasi-46f74a5226c8">
+      <a href="https://tulisan.sastrala.id/kebijakan-privasi-d0f55a57dc16">
         Kebijakan Privasi
       </a>
-      <!-- <NuxtLink to=" -policy">Kebijakan Privasi</NuxtLink> -->
       •
-      <a href="https://tulisan.sastrala.id/about">Tentang</a>
+      <a href="https://drive.google.com/file/d/1HAetmLJUthAkHjlVU129FQQ9GcKtibjL/view?usp=drive_link">Tentang</a>
     </section>
     <section class="text-lg">
       <span>© 2018 - {{ new Date().getFullYear() }},</span>

@@ -24,27 +24,3 @@
     </section>
   </section>
 </template>
-
-<script setup lang="ts">
-// define runtime config
-const config = useRuntimeConfig();
-
-useHead({
-  title: "Beranda | Sastrala",
-  meta: [
-    {
-      hid: "og:url",
-      property: "og:url",
-      content: "https://sastrala.id",
-    },
-  ],
-  link: [
-    {
-      hid: "canonical",
-      rel: "canonical",
-      href: "https://sastrala.id",
-    },
-  ],
-  script: [{ src: "https://cdn.campsite.bio/js/iframe.js", async: true }],
-});
-</script>

@@ -3,11 +3,6 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/api/configuration/nuxt-config#ssr
   ssr: false,
 
-  // https://nuxt.com/docs/api/configuration/nuxt-config#runtimeconfig
-  runtimeConfig: {
-    APP_URL: "https://sastrala.id",
-  },
-
   // https://nuxt.com/docs/api/configuration/nuxt-config#app
   app: {
     buildAssetsDir: "/_sastrala-web",
@@ -16,9 +11,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "id",
       },
-      title: "Sastrala - Sastra Kawula",
+      title: "Sastrala - Sastra Kawula Official Website Sastrala",
       meta: [
-        { name: "title", content: "Sastrala - Sastra Kawula" },
+        { name: "title", content: "Sastrala - Sastra Kawula Official Website Sastrala" },
         {
           name: "description",
           content:
@@ -31,7 +26,7 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "Sastrala, Ekstrakurikuler jurnalistik, SMKN 13 Bandung, Kreativitas siswa, Pengembangan keterampilan, Kreativitas remaja, Eksplorasi talenta, Reporter, Wartawan, jurnalis, podcast, sarcast",
+            "Sastrala, Ekstrakurikuler jurnalistik, SMKN 13 Bandung, Kreativitas siswa, Pengembangan keterampilan, Kreativitas remaja, Eksplorasi talenta, Reporter, Wartawan, jurnalis",
         },
 
         // open graph tag / facebook
@@ -44,6 +39,11 @@ export default defineNuxtConfig({
         },
         { property: "og:image", content: "https://sastrala.id/banner.jpg" },
         { property: "og:locale", content: "id" },
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: "https://sastrala.id",
+        },
 
         // twitter tag
         { property: "twitter:card", content: "summary_large_image" },
@@ -69,6 +69,14 @@ export default defineNuxtConfig({
           content: "09uwc6m1eaisg3gj1kn2xejq85gq70",
         },
       ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://sastrala.id",
+        },
+      ],
+      script: [{ src: "https://cdn.campsite.bio/js/iframe.js", async: true }],
     },
   },
 
