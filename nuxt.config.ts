@@ -76,7 +76,6 @@ export default defineNuxtConfig({
           href: "https://sastrala.id",
         },
       ],
-      script: [{ src: "https://cdn.campsite.bio/js/iframe.js", async: true }],
     },
   },
 

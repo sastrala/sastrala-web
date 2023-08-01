@@ -24,3 +24,9 @@
     </section>
   </section>
 </template>
+
+<script setup lang="ts">
+useHead({
+  script: [{ src: "https://cdn.campsite.bio/js/iframe.js", async: true }],
+});
+</script>
