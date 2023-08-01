@@ -109,7 +109,10 @@ export default defineNuxtConfig({
 
   // google analytics configuration
   gtag: {
-    id: 'G-CQQZ1X5WCD'
+    id: 'G-CQQZ1X5WCD',
+    config: {
+      page_title: 'Sastrala-Web - sastrala.id'
+    }
   },
 
   // google font config
