@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   // https://nuxt.com/docs/api/configuration/nuxt-config#ssr
   ssr: false,
+  spaLoadingTemplate: 'loading-template.html',
 
   // https://nuxt.com/docs/api/configuration/nuxt-config#app
   app: {
